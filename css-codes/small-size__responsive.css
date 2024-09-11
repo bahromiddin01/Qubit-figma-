@@ -1,0 +1,688 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Start of Navigation section styles */
+    .navigation__icon-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .navigation__icon-logo div i {
+        font-size: 20px;
+    }
+
+    .navigation__menu-items {
+        display: none;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 15%;
+        gap: 20px;
+    }
+
+    .booking-button {
+        background-color: #6F2CFF;
+        color: #fff;
+        font-size: 14px;
+        border: 3px solid #6F2CFF;
+        border-radius: 30px;
+        height: 35px;
+    }
+
+    .booking-button:hover {
+        background-color: #fff;
+        color: #6F2CFF;
+        transition: 0.3s;
+    }
+
+    .navigation__login-button {
+        font-size: 18px;
+        height: 20px;
+        border: none;
+        background: none;
+    }
+
+    .navigation__login-button:hover {
+        font-weight: 550;
+        font-size: 20px;
+        color: #6F2CFF;
+        transition: 0.2s;
+    }
+
+    /* End of Navigation section styles */
+
+    /* Start of Header section styles */
+    .header-section {
+        position: relative;
+        z-index: -1;
+        flex: 1;
+    }
+
+    .header-section__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-header__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        margin-bottom: 100px;
+        background-color: #f6bed9;
+        padding: 500px auto;
+    }
+
+    .header-section__background-image {
+        display: none;
+    }
+
+    .header-section__subtitle {
+        margin-top: 60px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .header-section__hero-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .hero-title__color {
+        color: #6F2CFF;
+    }
+
+    .header-section__info {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .emailing-booking__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 70%;
+        padding: 50px 0;
+    }
+
+    .input-email__button {
+        height: 35px;
+        font-size: 13px;
+        text-align: center;
+        border-radius: 30px;
+        border: 1px solid #6F2CFF;
+        background: #FFF;
+    }
+
+    .input-email__button:focus {
+        border: 3px solid #6F2CFF;
+        outline: #6F2CFF;
+    }
+
+    /* End of Header section styles */
+
+    /* Start of Trusred brands section styles */
+    .trusted-brands {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .trusted-brands__title {
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .trusted-brands__images {
+        display: grid;
+        gap: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .trusted-brands__images div img {
+        width: 150px;
+    }
+
+    .meeting-customers__button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .customers-button {
+        background: none;
+        border: none;
+        color: #1c1c1c;
+        font-size: 18px;
+        font-weight: 700;
+        height: 50px;
+    }
+
+    .under-line {
+        display: inline-block;
+        width: 180px;
+        height: 2px;
+        background-color: #6F2CFF;
+        margin-left: -5px;
+    }
+
+    .customers-button:hover {
+        font-size: 18.5px;
+        color: #6F2CFF;
+        transition: 0.2s;
+    }
+
+    /* End of Trusted brands section styles */
+
+    /* Start of Statistics section styles */
+
+    .section-title {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .statistics-section__title {
+        margin-bottom: 50px;
+    }
+
+    .statistics-section__booking-button__container {
+        text-align: center;
+    }
+
+    .statistics-section__booking-button {
+        text-align: center;
+        width: 70%;
+
+    }
+
+    .statistics-section__meeting-button {
+        text-align: center;
+        margin-top: 50px;
+        height: 50px;
+    }
+
+    .statistics-section__items {
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .statistics-section__items p {
+        font-size: 14px;
+    }
+
+    .statistics-section__items a {
+        font-size: 14px;
+        font-weight: 400;
+        color: #050505;
+        text-decoration: underline 1.5px;
+    }
+
+    .statistics-section__items a:hover {
+        font-weight: 500;
+    }
+
+    .statistics-section__part-2 {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .statistics-section__part-2__column {
+        display: flex;
+        justify-content: center;
+    }
+
+    .statistics-section__part-2__info-container {
+        display: grid;
+        gap: 50px;
+    }
+
+    .block-line__container {
+        width: 1.5px;
+        height: 500px;
+        background-color: #e0e0e0;
+    }
+
+    .statistics-section__part-2__items {
+        display: grid;
+        justify-content: center;
+    }
+
+    .part-2__title {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .section-subtitle {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    /* End of Statistics section styles */
+
+    /* Start of Commerce section styles */
+    .commerce-section {
+        display: grid;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 100px;
+    }
+
+    .commerce-section__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .section__intro {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .commerce-section__items {
+        display: grid;
+    }
+
+    .commerce-section__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+        background-color: lavender;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 30px 10%;
+    }
+
+    .commerce-section__item-title {
+        font-size: 19px;
+        font-weight: 700;
+    }
+
+    /* End of Commerce section styles */
+
+    /* Start of Feature section styles */
+    .feature-section {
+        background-color: #f5f5f5;
+    }
+
+    .feature-section__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .feature-section__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+    }
+
+    .feature-section__description p {
+        text-align: center;
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .feature-section__main-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature-section__main-image img {
+        max-width: 100%;
+    }
+
+    .feature-section__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .products-button {
+        height: 35px;
+        border: 2px solid #6F2CFF;
+        border-radius: 30px;
+        font-size: 14px;
+        background: #fff;
+        color: #6F2CFF;
+    }
+
+    .feature-button {
+        text-align: center;
+        width: 70%;
+    }
+
+    .products-button:hover {
+        border: 3px solid #6F2CFF;
+        font-weight: 600;
+    }
+
+    /* End of Feature section styles */
+
+    /* Start of Services section styles */
+    .services-section__title {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .services-section__items {
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .services-section__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+        background-color: lavender;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 30px 10%;
+    }
+
+    .services-section__item-title {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    /* End of Services section styles */
+
+    /* Start of Leading brands section styles */
+    .leading-brands {
+        padding: 50px 0;
+        background-color: #f5f5f5;
+    }
+
+    .leading-brands__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .leading-brands__items {
+        display: grid;
+        justify-content: center;
+    }
+
+    .brand-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        background-color: #fff;
+        color: #6F2CFF;
+        border-radius: 10px;
+        padding: 30px 30px;
+        margin: 20px 50px;
+    }
+
+    .brand-items:hover {
+        box-shadow: 0px 10px 20px rgb(5 54 77 / 10%);
+        transition: 0.2s;
+    }
+
+    .brand-info {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    /* End of Leading brands section styles */
+
+    /* Start of Sector scale personalization section styles */
+    .sector-scale__section {
+        padding: 50px 0;
+    }
+
+    .sector-scale__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .sector-scale__items {
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+        margin: 0 10%;
+    }
+
+    .sector-scale__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 30px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        background-color: #17002e;
+        color: #fff;
+    }
+
+    .item__icon-title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sector-scale__item p {
+        text-align: left;
+    }
+
+    .border-bottom {
+        border-bottom: 3px solid #fff;
+        padding-bottom: 5px;
+    }
+
+    /* End of Sector scale personalization section styles */
+
+    /* Start of Ecosystem section styles */
+    .ecosystem-section {
+        padding: 50px 0;
+        padding-bottom: 0;
+        background-color: #f5f5f5;
+    }
+
+    .ecosystem-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ecosystem-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .ecosystem-data {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    .integrations-button__container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .integrations-button {
+        width: 70%;
+    }
+
+    .ecosystem__main-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ecosystem__main-image img {
+        max-width: 100%;
+    }
+
+    /* End of Ecosystem section styles */
+
+    /* Start of Booking demo section styles */
+    .booking-section {
+        background-color: #280b44;
+    }
+
+    .booking-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 30px 0;
+        color: #fff;
+    }
+
+    /* End of Booking demo section styles */
+
+    /* Start of Contacting section styles */
+    .contacting-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .connecting-icons {
+        display: flex;
+        gap: 30px;
+    }
+
+    .connecting-icons i {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+
+    .connecting-icons i:hover {
+        font-size: 25px;
+        transition: 0.2s;
+        color: #6F2CFF;
+    }
+
+    /* End of Contacting section styles */
+
+    /* Start of Footer section styles */
+    .footer-section {
+        background-color: #20003c;
+        padding: 50px 0;
+    }
+
+    .footer-section__info {
+        display: grid;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .footer-section__items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-section__links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .footer-section__links li a {
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .footer-section__logo-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-copyright {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .footer-icon i {
+        display: inline-block;
+        font-size: 15px;
+        background-color: #fff;
+        color: #20003c;
+        border: 1.5px solid #fff;
+        border-radius: 50%;
+        margin-left: 50px;
+    }
+
+    /* End of Footer section styles */
+}
